@@ -376,8 +376,8 @@ position: absolute;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -562,7 +562,6 @@ position: absolute;
   margin-right: 10px;
   width: 44px;
   height: 44px;
-
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -574,11 +573,11 @@ position: absolute;
 .footer .team-socials-svg {
   fill: var(--white);
 }
-.portfolio.link {
+.portfolio .link {
   display: inline-block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio.link:focus, .portfolio.link:hover {
+.portfolio .link:focus, .portfolio .link:hover {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
 }
 .portfolio-wrap {
