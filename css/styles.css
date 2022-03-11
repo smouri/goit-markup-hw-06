@@ -566,7 +566,6 @@ position: absolute;
   border-radius: 50%;
   cursor: pointer;
 }
-
 .team-socials-item:last-child {
   margin-right: 0;
 }
@@ -654,7 +653,7 @@ position: absolute;
 }
 
 .subscription-button span {
-   margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* modal windows */
@@ -665,11 +664,9 @@ position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms 250ms;
@@ -678,9 +675,8 @@ position: absolute;
 .modal-body {
   position: relative;
   padding: 40px;
-  width: 528px;
-  height: 581px;
-
+  min-width: 528px;
+  min-height: 581px;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -690,23 +686,28 @@ position: absolute;
   position: absolute;
   right: 8px;
   top: 8px;
-  
-
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
-
   background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
 }
-
+/* .modal-button:focus,
+.modal-button:hover {
+  border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+.modal-button:focus .modal-close,
+.modal-button:hover .modal-close{
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-title {
   margin-bottom: 12px;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -723,7 +724,6 @@ position: absolute;
 .box-label {
   display: block;
   margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -737,10 +737,8 @@ position: absolute;
 .box-input {
   width: 100%;
   padding: 11px 42px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   transition: outline cubic-bezier(0.4, 0, 0.2, 1) 250ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box-icon {
@@ -748,7 +746,6 @@ position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-
   fill: var(--black);
 }
 .box-input:focus, 
@@ -765,14 +762,11 @@ position: absolute;
   max-height: 120px;
   padding: 12px 16px;
   resize: none;
-
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--title-text-color);
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   transition: outline cubic-bezier(0.4, 0, 0.2, 1) 250ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .terms-icon  {
@@ -781,13 +775,9 @@ position: absolute;
   height: 15px;
   margin-right: 7px;
   vertical-align: middle;
-
   border: 1px solid  var(--black);
   border-radius: 2px;
 }
-
-
-
 .terms-text {
   line-height: 1.72;
   letter-spacing: 0.03em;
